@@ -1,0 +1,661 @@
+Trial,Species,Treatment,Period,Behavior,Duration,Observer,Weather,Distance,Num_Ad,Num_Ju,Total_indiv
+1,b,experimental,pre,look,21.317,Idaly,Overcast,104,3,0,3
+1,b,experimental,pre,move,59.645,Idaly,Overcast,104,3,0,3
+1,b,experimental,pre,out of sight,147.365,Idaly,Overcast,104,3,0,3
+1,b,experimental,pre,other,8.53,Idaly,Overcast,104,3,0,3
+1,b,experimental,pre,forage,38.903,Idaly,Overcast,104,3,0,3
+1,b,experimental,playback,look,31.461,Idaly,Overcast,104,8,0,8
+1,b,experimental,playback,move,104.365,Idaly,Overcast,104,8,0,8
+1,b,experimental,playback,out of sight,82.995,Idaly,Overcast,104,8,0,8
+1,b,experimental,playback,other,0,Idaly,Overcast,104,8,0,8
+1,b,experimental,playback,forage,20.997,Idaly,Overcast,104,8,0,8
+1,b,experimental,post,look,0.775,Idaly,Overcast,104,5,2,7
+1,b,experimental,post,move,57.355,Idaly,Overcast,104,5,2,7
+1,b,experimental,post,out of sight,100.603,Idaly,Overcast,104,5,2,7
+1,b,experimental,post,other,0,Idaly,Overcast,104,5,2,7
+1,b,experimental,post,forage,96.998,Idaly,Overcast,104,5,2,7
+1,b,control,pre,look,14.425,Idaly,Overcast,104,5,0,5
+1,b,control,pre,move,60.503,Idaly,Overcast,104,5,0,5
+1,b,control,pre,out of sight,160.021,Idaly,Overcast,104,5,0,5
+1,b,control,pre,other,3.041,Idaly,Overcast,104,5,0,5
+1,b,control,pre,forage,36.574,Idaly,Overcast,104,5,0,5
+1,b,control,playback,look,12.728,Idaly,Overcast,104,6,0,6
+1,b,control,playback,move,41.269,Idaly,Overcast,104,6,0,6
+1,b,control,playback,out of sight,30.051,Idaly,Overcast,104,6,0,6
+1,b,control,playback,other,0.862,Idaly,Overcast,104,6,0,6
+1,b,control,playback,forage,187.135,Idaly,Overcast,104,6,0,6
+1,b,control,post,look,19.595,Idaly,Overcast,104,11,0,11
+1,b,control,post,move,106.066,Idaly,Overcast,104,11,0,11
+1,b,control,post,out of sight,113.643,Idaly,Overcast,104,11,0,11
+1,b,control,post,other,2.788,Idaly,Overcast,104,11,0,11
+1,b,control,post,forage,12.313,Idaly,Overcast,104,11,0,11
+2,w,experimental,pre,look,1.056,Tavish,Rain,1206,3,0,3
+2,w,experimental,pre,move,95.347,Tavish,Rain,1206,3,0,3
+2,w,experimental,pre,out of sight,195.376,Tavish,Rain,1206,3,0,3
+2,w,experimental,pre,other,0,Tavish,Rain,1206,3,0,3
+2,w,experimental,pre,forage,0,Tavish,Rain,1206,3,0,3
+2,w,experimental,playback,look,0,Tavish,Rain,1206,3,0,3
+2,w,experimental,playback,move,38.018,Tavish,Rain,1206,3,0,3
+2,w,experimental,playback,out of sight,254.792,Tavish,Rain,1206,3,0,3
+2,w,experimental,playback,other,0,Tavish,Rain,1206,3,0,3
+2,w,experimental,playback,forage,0,Tavish,Rain,1206,3,0,3
+2,w,experimental,post,look,0,Tavish,Rain,1206,0,0,0
+2,w,experimental,post,move,0,Tavish,Rain,1206,0,0,0
+2,w,experimental,post,out of sight,297.358,Tavish,Rain,1206,0,0,0
+2,w,experimental,post,other,0,Tavish,Rain,1206,0,0,0
+2,w,experimental,post,forage,0,Tavish,Rain,1206,0,0,0
+2,b,control,pre,look,0,Tavish,Rain,1206,4,0,4
+2,b,control,pre,move,73.026,Tavish,Rain,1206,4,0,4
+2,b,control,pre,out of sight,177.713,Tavish,Rain,1206,4,0,4
+2,b,control,pre,other,0,Tavish,Rain,1206,4,0,4
+2,b,control,pre,forage,25.535,Tavish,Rain,1206,4,0,4
+2,b,control,playback,look,6.61,Tavish,Rain,1206,3,0,3
+2,b,control,playback,move,127.836,Tavish,Rain,1206,3,0,3
+2,b,control,playback,out of sight,49.602,Tavish,Rain,1206,3,0,3
+2,b,control,playback,other,0,Tavish,Rain,1206,3,0,3
+2,b,control,playback,forage,103.376,Tavish,Rain,1206,3,0,3
+2,b,control,post,look,9.498,Tavish,Rain,1206,4,0,4
+2,b,control,post,move,65.502,Tavish,Rain,1206,4,0,4
+2,b,control,post,out of sight,140.304,Tavish,Rain,1206,4,0,4
+2,b,control,post,other,0,Tavish,Rain,1206,4,0,4
+2,b,control,post,forage,75.427,Tavish,Rain,1206,4,0,4
+3,w,experimental,pre,look,0.676,Valerie,Overcast,729,4,0,4
+3,w,experimental,pre,move,115.074,Valerie,Overcast,729,4,0,4
+3,w,experimental,pre,out of sight,108.216,Valerie,Overcast,729,4,0,4
+3,w,experimental,pre,other,0,Valerie,Overcast,729,4,0,4
+3,w,experimental,pre,forage,43.121,Valerie,Overcast,729,4,0,4
+3,w,experimental,playback,look,43.35,Valerie,Overcast,729,1,0,1
+3,w,experimental,playback,move,117.957,Valerie,Overcast,729,1,0,1
+3,w,experimental,playback,out of sight,0,Valerie,Overcast,729,1,0,1
+3,w,experimental,playback,other,0,Valerie,Overcast,729,1,0,1
+3,w,experimental,playback,forage,110.022,Valerie,Overcast,729,1,0,1
+3,w,experimental,post,look,39.369,Valerie,Overcast,729,3,0,3
+3,w,experimental,post,move,97.829,Valerie,Overcast,729,3,0,3
+3,w,experimental,post,out of sight,10.542,Valerie,Overcast,729,3,0,3
+3,w,experimental,post,other,9.368,Valerie,Overcast,729,3,0,3
+3,w,experimental,post,forage,45.143,Valerie,Overcast,729,3,0,3
+3,w,control,pre,look,1.028,Valerie,Overcast,729,3,0,3
+3,w,control,pre,move,98.85,Valerie,Overcast,729,3,0,3
+3,w,control,pre,out of sight,138.41,Valerie,Overcast,729,3,0,3
+3,w,control,pre,other,0,Valerie,Overcast,729,3,0,3
+3,w,control,pre,forage,48.077,Valerie,Overcast,729,3,0,3
+3,w,control,playback,look,25.1,Valerie,Overcast,729,1,1,2
+3,w,control,playback,move,128.361,Valerie,Overcast,729,1,1,2
+3,w,control,playback,out of sight,33.937,Valerie,Overcast,729,1,1,2
+3,w,control,playback,other,0,Valerie,Overcast,729,1,1,2
+3,w,control,playback,forage,95.976,Valerie,Overcast,729,1,1,2
+3,w,control,post,look,3.149,Valerie,Overcast,729,0,1,1
+3,w,control,post,move,93.977,Valerie,Overcast,729,0,1,1
+3,w,control,post,out of sight,0.407,Valerie,Overcast,729,0,1,1
+3,w,control,post,other,1.135,Valerie,Overcast,729,0,1,1
+3,w,control,post,forage,102.784,Valerie,Overcast,729,0,1,1
+4,b,experimental,pre,look,74.237,Valerie,Partly cloudy,1003,1,0,1
+4,b,experimental,pre,move,25.495,Valerie,Partly cloudy,1003,1,0,1
+4,b,experimental,pre,out of sight,52.386,Valerie,Partly cloudy,1003,1,0,1
+4,b,experimental,pre,other,109.516,Valerie,Partly cloudy,1003,1,0,1
+4,b,experimental,pre,forage,16.38,Valerie,Partly cloudy,1003,1,0,1
+4,b,experimental,playback,look,101.933,Valerie,Partly cloudy,1003,2,0,2
+4,b,experimental,playback,move,44.035,Valerie,Partly cloudy,1003,2,0,2
+4,b,experimental,playback,out of sight,18.164,Valerie,Partly cloudy,1003,2,0,2
+4,b,experimental,playback,other,53.837,Valerie,Partly cloudy,1003,2,0,2
+4,b,experimental,playback,forage,0,Valerie,Partly cloudy,1003,2,0,2
+4,b,experimental,post,look,20.238,Valerie,Partly cloudy,1003,2,0,2
+4,b,experimental,post,move,121.251,Valerie,Partly cloudy,1003,2,0,2
+4,b,experimental,post,out of sight,63.824,Valerie,Partly cloudy,1003,2,0,2
+4,b,experimental,post,other,10.05,Valerie,Partly cloudy,1003,2,0,2
+4,b,experimental,post,forage,31.899,Valerie,Partly cloudy,1003,2,0,2
+4,b,control,pre,look,0,Valerie,Partly cloudy,1003,3,1,4
+4,b,control,pre,move,95.433,Valerie,Partly cloudy,1003,3,1,4
+4,b,control,pre,out of sight,111.094,Valerie,Partly cloudy,1003,3,1,4
+4,b,control,pre,other,0,Valerie,Partly cloudy,1003,3,1,4
+4,b,control,pre,forage,69.827,Valerie,Partly cloudy,1003,3,1,4
+4,b,control,playback,look,0,Valerie,Partly cloudy,1003,2,0,2
+4,b,control,playback,move,25.28,Valerie,Partly cloudy,1003,2,0,2
+4,b,control,playback,out of sight,113.533,Valerie,Partly cloudy,1003,2,0,2
+4,b,control,playback,other,2.502,Valerie,Partly cloudy,1003,2,0,2
+4,b,control,playback,forage,135.177,Valerie,Partly cloudy,1003,2,0,2
+4,b,control,post,look,0,Valerie,Partly cloudy,1003,4,1,5
+4,b,control,post,move,102.544,Valerie,Partly cloudy,1003,4,1,5
+4,b,control,post,out of sight,159.625,Valerie,Partly cloudy,1003,4,1,5
+4,b,control,post,other,0,Valerie,Partly cloudy,1003,4,1,5
+4,b,control,post,forage,31.692,Valerie,Partly cloudy,1003,4,1,5
+5,b,experimental,pre,look,0.628,Idaly,Overcast,584,2,0,2
+5,b,experimental,pre,move,29.041,Idaly,Overcast,584,2,0,2
+5,b,experimental,pre,out of sight,252.646,Idaly,Overcast,584,2,0,2
+5,b,experimental,pre,other,0,Idaly,Overcast,584,2,0,2
+5,b,experimental,pre,forage,7.162,Idaly,Overcast,584,2,0,2
+5,b,experimental,playback,look,3.169,Idaly,Overcast,584,6,0,6
+5,b,experimental,playback,move,69.175,Idaly,Overcast,584,6,0,6
+5,b,experimental,playback,out of sight,196.902,Idaly,Overcast,584,6,0,6
+5,b,experimental,playback,other,0,Idaly,Overcast,584,6,0,6
+5,b,experimental,playback,forage,0,Idaly,Overcast,584,6,0,6
+5,b,experimental,post,look,7.884,Idaly,Overcast,584,4,0,4
+5,b,experimental,post,move,55.512,Idaly,Overcast,584,4,0,4
+5,b,experimental,post,out of sight,196.964,Idaly,Overcast,584,4,0,4
+5,b,experimental,post,other,3.65,Idaly,Overcast,584,4,0,4
+5,b,experimental,post,forage,20.886,Idaly,Overcast,584,4,0,4
+5,b,control,pre,look,17.658,Idaly,Overcast,584,4,0,4
+5,b,control,pre,move,116.851,Idaly,Overcast,584,4,0,4
+5,b,control,pre,out of sight,107.161,Idaly,Overcast,584,4,0,4
+5,b,control,pre,other,0,Idaly,Overcast,584,4,0,4
+5,b,control,pre,forage,34.343,Idaly,Overcast,584,4,0,4
+5,b,control,playback,look,7.978,Idaly,Overcast,584,0,2,2
+5,b,control,playback,move,10.033,Idaly,Overcast,584,0,2,2
+5,b,control,playback,out of sight,25.768,Idaly,Overcast,584,0,2,2
+5,b,control,playback,other,122.818,Idaly,Overcast,584,0,2,2
+5,b,control,playback,forage,8.07,Idaly,Overcast,584,0,2,2
+5,b,control,post,look,2.953,Idaly,Overcast,584,1,0,1
+5,b,control,post,move,42.487,Idaly,Overcast,584,1,0,1
+5,b,control,post,out of sight,60.814,Idaly,Overcast,584,1,0,1
+5,b,control,post,other,0,Idaly,Overcast,584,1,0,1
+5,b,control,post,forage,184.891,Idaly,Overcast,584,1,0,1
+6,w,experimental,pre,look,6.379,Tavish,Clear,715,2,0,2
+6,w,experimental,pre,move,78.693,Tavish,Clear,715,2,0,2
+6,w,experimental,pre,out of sight,42.714,Tavish,Clear,715,2,0,2
+6,w,experimental,pre,other,0,Tavish,Clear,715,2,0,2
+6,w,experimental,pre,forage,133.26,Tavish,Clear,715,2,0,2
+6,w,experimental,playback,look,16.355,Tavish,Clear,715,3,0,3
+6,w,experimental,playback,move,72.225,Tavish,Clear,715,3,0,3
+6,w,experimental,playback,out of sight,129.212,Tavish,Clear,715,3,0,3
+6,w,experimental,playback,other,4.237,Tavish,Clear,715,3,0,3
+6,w,experimental,playback,forage,30.271,Tavish,Clear,715,3,0,3
+6,w,experimental,post,look,8.616,Tavish,Clear,715,3,0,3
+6,w,experimental,post,move,92.561,Tavish,Clear,715,3,0,3
+6,w,experimental,post,out of sight,108.39,Tavish,Clear,715,3,0,3
+6,w,experimental,post,other,2.943,Tavish,Clear,715,3,0,3
+6,w,experimental,post,forage,25.712,Tavish,Clear,715,3,0,3
+6,w,control,pre,look,16.103,Tavish,Clear,715,1,0,1
+6,w,control,pre,move,106.167,Tavish,Clear,715,1,0,1
+6,w,control,pre,out of sight,42.566,Tavish,Clear,715,1,0,1
+6,w,control,pre,other,18.741,Tavish,Clear,715,1,0,1
+6,w,control,pre,forage,68.028,Tavish,Clear,715,1,0,1
+6,w,control,playback,look,3.015,Tavish,Clear,715,2,0,2
+6,w,control,playback,move,65.215,Tavish,Clear,715,2,0,2
+6,w,control,playback,out of sight,114.838,Tavish,Clear,715,2,0,2
+6,w,control,playback,other,0.671,Tavish,Clear,715,2,0,2
+6,w,control,playback,forage,84.192,Tavish,Clear,715,2,0,2
+6,w,control,post,look,84.414,Tavish,Clear,715,1,0,1
+6,w,control,post,move,94.919,Tavish,Clear,715,1,0,1
+6,w,control,post,out of sight,80.278,Tavish,Clear,715,1,0,1
+6,w,control,post,other,4.824,Tavish,Clear,715,1,0,1
+6,w,control,post,forage,0,Tavish,Clear,715,1,0,1
+7,b,experimental,pre,look,2.722,Valerie,Clear,320,3,0,3
+7,b,experimental,pre,move,81.855,Valerie,Clear,320,3,0,3
+7,b,experimental,pre,out of sight,131.72,Valerie,Clear,320,3,0,3
+7,b,experimental,pre,other,0,Valerie,Clear,320,3,0,3
+7,b,experimental,pre,forage,58.982,Valerie,Clear,320,3,0,3
+7,b,experimental,playback,look,51.5,Valerie,Clear,320,2,0,2
+7,b,experimental,playback,move,102.752,Valerie,Clear,320,2,0,2
+7,b,experimental,playback,out of sight,5.549,Valerie,Clear,320,2,0,2
+7,b,experimental,playback,other,8.185,Valerie,Clear,320,2,0,2
+7,b,experimental,playback,forage,107.368,Valerie,Clear,320,2,0,2
+7,b,experimental,post,look,20.973,Valerie,Clear,320,3,1,4
+7,b,experimental,post,move,84.566,Valerie,Clear,320,3,1,4
+7,b,experimental,post,out of sight,35.308,Valerie,Clear,320,3,1,4
+7,b,experimental,post,other,21.672,Valerie,Clear,320,3,1,4
+7,b,experimental,post,forage,63.848,Valerie,Clear,320,3,1,4
+7,b,control,pre,look,41.135,Valerie,Clear,320,1,1,2
+7,b,control,pre,move,91.576,Valerie,Clear,320,1,1,2
+7,b,control,pre,out of sight,68.654,Valerie,Clear,320,1,1,2
+7,b,control,pre,other,2.116,Valerie,Clear,320,1,1,2
+7,b,control,pre,forage,62.62,Valerie,Clear,320,1,1,2
+7,b,control,playback,look,44.84,Valerie,Clear,320,3,1,4
+7,b,control,playback,move,109.011,Valerie,Clear,320,3,1,4
+7,b,control,playback,out of sight,21.525,Valerie,Clear,320,3,1,4
+7,b,control,playback,other,2.541,Valerie,Clear,320,3,1,4
+7,b,control,playback,forage,33.114,Valerie,Clear,320,3,1,4
+7,b,control,post,look,1.135,Valerie,Clear,320,5,0,5
+7,b,control,post,move,93.586,Valerie,Clear,320,5,0,5
+7,b,control,post,out of sight,77.611,Valerie,Clear,320,5,0,5
+7,b,control,post,other,3.043,Valerie,Clear,320,5,0,5
+7,b,control,post,forage,103.006,Valerie,Clear,320,5,0,5
+8,w,experimental,pre,look,14.092,Idaly,Overcast,1221,3,0,3
+8,w,experimental,pre,move,115.427,Idaly,Overcast,1221,3,0,3
+8,w,experimental,pre,out of sight,95.171,Idaly,Overcast,1221,3,0,3
+8,w,experimental,pre,other,0,Idaly,Overcast,1221,3,0,3
+8,w,experimental,pre,forage,0.939,Idaly,Overcast,1221,3,0,3
+8,w,experimental,playback,look,1.115,Idaly,Overcast,1221,2,0,2
+8,w,experimental,playback,move,55.908,Idaly,Overcast,1221,2,0,2
+8,w,experimental,playback,out of sight,230.432,Idaly,Overcast,1221,2,0,2
+8,w,experimental,playback,other,0,Idaly,Overcast,1221,2,0,2
+8,w,experimental,playback,forage,0,Idaly,Overcast,1221,2,0,2
+8,w,experimental,post,look,0,Idaly,Overcast,1221,0,0,0
+8,w,experimental,post,move,0,Idaly,Overcast,1221,0,0,0
+8,w,experimental,post,out of sight,298.447,Idaly,Overcast,1221,0,0,0
+8,w,experimental,post,other,0,Idaly,Overcast,1221,0,0,0
+8,w,experimental,post,forage,0,Idaly,Overcast,1221,0,0,0
+8,w,control,pre,look,7.917,Idaly,Overcast,1221,1,0,1
+8,w,control,pre,move,20.763,Idaly,Overcast,1221,1,0,1
+8,w,control,pre,out of sight,147.924,Idaly,Overcast,1221,1,0,1
+8,w,control,pre,other,0,Idaly,Overcast,1221,1,0,1
+8,w,control,pre,forage,121.454,Idaly,Overcast,1221,1,0,1
+8,w,control,playback,look,0,Idaly,Overcast,1221,2,0,2
+8,w,control,playback,move,13.901,Idaly,Overcast,1221,2,0,2
+8,w,control,playback,out of sight,222.286,Idaly,Overcast,1221,2,0,2
+8,w,control,playback,other,0,Idaly,Overcast,1221,2,0,2
+8,w,control,playback,forage,55.312,Idaly,Overcast,1221,2,0,2
+8,w,control,post,look,142.862,Idaly,Overcast,1221,4,0,4
+8,w,control,post,move,46.077,Idaly,Overcast,1221,4,0,4
+8,w,control,post,out of sight,48.842,Idaly,Overcast,1221,4,0,4
+8,w,control,post,other,0,Idaly,Overcast,1221,4,0,4
+8,w,control,post,forage,0,Idaly,Overcast,1221,4,0,4
+9,w,experimental,pre,look,3.667,Tavish,Partly cloudy,1098,2,0,2
+9,w,experimental,pre,move,56.874,Tavish,Partly cloudy,1098,2,0,2
+9,w,experimental,pre,out of sight,39.188,Tavish,Partly cloudy,1098,2,0,2
+9,w,experimental,pre,other,0,Tavish,Partly cloudy,1098,2,0,2
+9,w,experimental,pre,forage,179.412,Tavish,Partly cloudy,1098,2,0,2
+9,w,experimental,playback,look,42.973,Tavish,Partly cloudy,1098,2,0,2
+9,w,experimental,playback,move,88.519,Tavish,Partly cloudy,1098,2,0,2
+9,w,experimental,playback,out of sight,16.079,Tavish,Partly cloudy,1098,2,0,2
+9,w,experimental,playback,other,0,Tavish,Partly cloudy,1098,2,0,2
+9,w,experimental,playback,forage,107.789,Tavish,Partly cloudy,1098,2,0,2
+9,w,experimental,post,look,20.009,Tavish,Partly cloudy,1098,1,1,2
+9,w,experimental,post,move,52.079,Tavish,Partly cloudy,1098,1,1,2
+9,w,experimental,post,out of sight,27.083,Tavish,Partly cloudy,1098,1,1,2
+9,w,experimental,post,other,0,Tavish,Partly cloudy,1098,1,1,2
+9,w,experimental,post,forage,179.922,Tavish,Partly cloudy,1098,1,1,2
+9,w,control,pre,look,12.356,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,pre,move,68.224,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,pre,out of sight,10.268,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,pre,other,0,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,pre,forage,153.072,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,playback,look,8.106,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,playback,move,103.972,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,playback,out of sight,48.009,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,playback,other,0,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,playback,forage,111.445,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,post,look,13.97,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,post,move,22.103,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,post,out of sight,64.373,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,post,other,0,Tavish,Partly cloudy,1098,3,0,3
+9,w,control,post,forage,180.645,Tavish,Partly cloudy,1098,3,0,3
+10,b,experimental,pre,look,28.958,Idaly,Partly cloudy,576,2,2,4
+10,b,experimental,pre,move,55.125,Idaly,Partly cloudy,576,2,2,4
+10,b,experimental,pre,out of sight,68.514,Idaly,Partly cloudy,576,2,2,4
+10,b,experimental,pre,other,0,Idaly,Partly cloudy,576,2,2,4
+10,b,experimental,pre,forage,125.031,Idaly,Partly cloudy,576,2,2,4
+10,b,experimental,playback,look,39.108,Idaly,Partly cloudy,576,4,0,4
+10,b,experimental,playback,move,147.774,Idaly,Partly cloudy,576,4,0,4
+10,b,experimental,playback,out of sight,88.429,Idaly,Partly cloudy,576,4,0,4
+10,b,experimental,playback,other,0.901,Idaly,Partly cloudy,576,4,0,4
+10,b,experimental,playback,forage,12.464,Idaly,Partly cloudy,576,4,0,4
+10,b,experimental,post,look,0,Idaly,Partly cloudy,576,0,0,0
+10,b,experimental,post,move,0,Idaly,Partly cloudy,576,0,0,0
+10,b,experimental,post,out of sight,299.111,Idaly,Partly cloudy,576,0,0,0
+10,b,experimental,post,other,0,Idaly,Partly cloudy,576,0,0,0
+10,b,experimental,post,forage,0,Idaly,Partly cloudy,576,0,0,0
+10,b,control,pre,look,43.878,Idaly,Partly cloudy,576,2,0,2
+10,b,control,pre,move,28.231,Idaly,Partly cloudy,576,2,0,2
+10,b,control,pre,out of sight,161.073,Idaly,Partly cloudy,576,2,0,2
+10,b,control,pre,other,0,Idaly,Partly cloudy,576,2,0,2
+10,b,control,pre,forage,70.207,Idaly,Partly cloudy,576,2,0,2
+10,b,control,playback,look,0,Idaly,Partly cloudy,576,7,0,7
+10,b,control,playback,move,81.955,Idaly,Partly cloudy,576,7,0,7
+10,b,control,playback,out of sight,177.573,Idaly,Partly cloudy,576,7,0,7
+10,b,control,playback,other,0.814,Idaly,Partly cloudy,576,7,0,7
+10,b,control,playback,forage,25.387,Idaly,Partly cloudy,576,7,0,7
+10,b,control,post,look,111.359,Idaly,Partly cloudy,576,3,0,3
+10,b,control,post,move,28.186,Idaly,Partly cloudy,576,3,0,3
+10,b,control,post,out of sight,99.758,Idaly,Partly cloudy,576,3,0,3
+10,b,control,post,other,3.827,Idaly,Partly cloudy,576,3,0,3
+10,b,control,post,forage,40.881,Idaly,Partly cloudy,576,3,0,3
+11,b,experimental,pre,look,66.13,Valerie,Partly cloudy,583,1,0,1
+11,b,experimental,pre,move,122.43,Valerie,Partly cloudy,583,1,0,1
+11,b,experimental,pre,out of sight,7.781,Valerie,Partly cloudy,583,1,0,1
+11,b,experimental,pre,other,26.341,Valerie,Partly cloudy,583,1,0,1
+11,b,experimental,pre,forage,20.52,Valerie,Partly cloudy,583,1,0,1
+11,b,experimental,playback,look,108.568,Valerie,Partly cloudy,583,1,0,1
+11,b,experimental,playback,move,59.345,Valerie,Partly cloudy,583,1,0,1
+11,b,experimental,playback,out of sight,23.595,Valerie,Partly cloudy,583,1,0,1
+11,b,experimental,playback,other,57.678,Valerie,Partly cloudy,583,1,0,1
+11,b,experimental,playback,forage,0,Valerie,Partly cloudy,583,1,0,1
+11,b,experimental,post,look,48.257,Valerie,Partly cloudy,583,3,0,3
+11,b,experimental,post,move,101.409,Valerie,Partly cloudy,583,3,0,3
+11,b,experimental,post,out of sight,40.765,Valerie,Partly cloudy,583,3,0,3
+11,b,experimental,post,other,1.069,Valerie,Partly cloudy,583,3,0,3
+11,b,experimental,post,forage,27.468,Valerie,Partly cloudy,583,3,0,3
+11,b,control,pre,look,2.524,Valerie,Partly cloudy,583,4,0,4
+11,b,control,pre,move,152.42,Valerie,Partly cloudy,583,4,0,4
+11,b,control,pre,out of sight,107.588,Valerie,Partly cloudy,583,4,0,4
+11,b,control,pre,other,0,Valerie,Partly cloudy,583,4,0,4
+11,b,control,pre,forage,13.181,Valerie,Partly cloudy,583,4,0,4
+11,b,control,playback,look,0,Valerie,Partly cloudy,583,3,0,3
+11,b,control,playback,move,150.941,Valerie,Partly cloudy,583,3,0,3
+11,b,control,playback,out of sight,43.389,Valerie,Partly cloudy,583,3,0,3
+11,b,control,playback,other,0,Valerie,Partly cloudy,583,3,0,3
+11,b,control,playback,forage,42.658,Valerie,Partly cloudy,583,3,0,3
+11,b,control,post,look,1.447,Valerie,Partly cloudy,583,1,1,2
+11,b,control,post,move,87.276,Valerie,Partly cloudy,583,1,1,2
+11,b,control,post,out of sight,33.394,Valerie,Partly cloudy,583,1,1,2
+11,b,control,post,other,1.155,Valerie,Partly cloudy,583,1,1,2
+11,b,control,post,forage,173.846,Valerie,Partly cloudy,583,1,1,2
+12,b,experimental,pre,look,3.283,Tavish,Partly cloudy,842,5,0,5
+12,b,experimental,pre,move,89.811,Tavish,Partly cloudy,842,5,0,5
+12,b,experimental,pre,out of sight,107.091,Tavish,Partly cloudy,842,5,0,5
+12,b,experimental,pre,other,0,Tavish,Partly cloudy,842,5,0,5
+12,b,experimental,pre,forage,84.853,Tavish,Partly cloudy,842,5,0,5
+12,b,experimental,playback,look,15.339,Tavish,Partly cloudy,842,2,1,3
+12,b,experimental,playback,move,66.701,Tavish,Partly cloudy,842,2,1,3
+12,b,experimental,playback,out of sight,205.21,Tavish,Partly cloudy,842,2,1,3
+12,b,experimental,playback,other,0,Tavish,Partly cloudy,842,2,1,3
+12,b,experimental,playback,forage,6.766,Tavish,Partly cloudy,842,2,1,3
+12,b,experimental,post,look,0,Tavish,Partly cloudy,842,0,0,0
+12,b,experimental,post,move,0,Tavish,Partly cloudy,842,0,0,0
+12,b,experimental,post,out of sight,293.379,Tavish,Partly cloudy,842,0,0,0
+12,b,experimental,post,other,0,Tavish,Partly cloudy,842,0,0,0
+12,b,experimental,post,forage,0,Tavish,Partly cloudy,842,0,0,0
+12,b,control,pre,look,1.018,Tavish,Partly cloudy,842,3,0,3
+12,b,control,pre,move,139.292,Tavish,Partly cloudy,842,3,0,3
+12,b,control,pre,out of sight,21.216,Tavish,Partly cloudy,842,3,0,3
+12,b,control,pre,other,0,Tavish,Partly cloudy,842,3,0,3
+12,b,control,pre,forage,118.212,Tavish,Partly cloudy,842,3,0,3
+12,b,control,playback,look,5.438,Tavish,Partly cloudy,842,3,0,3
+12,b,control,playback,move,73.862,Tavish,Partly cloudy,842,3,0,3
+12,b,control,playback,out of sight,53.129,Tavish,Partly cloudy,842,3,0,3
+12,b,control,playback,other,3.889,Tavish,Partly cloudy,842,3,0,3
+12,b,control,playback,forage,136.15,Tavish,Partly cloudy,842,3,0,3
+12,b,control,post,look,1.738,Tavish,Partly cloudy,842,3,0,3
+12,b,control,post,move,36.751,Tavish,Partly cloudy,842,3,0,3
+12,b,control,post,out of sight,218.832,Tavish,Partly cloudy,842,3,0,3
+12,b,control,post,other,0,Tavish,Partly cloudy,842,3,0,3
+12,b,control,post,forage,32.75,Tavish,Partly cloudy,842,3,0,3
+13,b,experimental,pre,look,135.938,Idaly,Partly cloudy,975,0,1,1
+13,b,experimental,pre,move,14.786,Idaly,Partly cloudy,975,0,1,1
+13,b,experimental,pre,out of sight,19.185,Idaly,Partly cloudy,975,0,1,1
+13,b,experimental,pre,other,0,Idaly,Partly cloudy,975,0,1,1
+13,b,experimental,pre,forage,156.723,Idaly,Partly cloudy,975,0,1,1
+13,b,experimental,playback,look,34.434,Idaly,Partly cloudy,975,4,0,4
+13,b,experimental,playback,move,71.025,Idaly,Partly cloudy,975,4,0,4
+13,b,experimental,playback,out of sight,166.377,Idaly,Partly cloudy,975,4,0,4
+13,b,experimental,playback,other,0,Idaly,Partly cloudy,975,4,0,4
+13,b,experimental,playback,forage,4.663,Idaly,Partly cloudy,975,4,0,4
+13,b,experimental,post,look,91.948,Idaly,Partly cloudy,975,1,4,5
+13,b,experimental,post,move,71.751,Idaly,Partly cloudy,975,1,4,5
+13,b,experimental,post,out of sight,31.41,Idaly,Partly cloudy,975,1,4,5
+13,b,experimental,post,other,10.137,Idaly,Partly cloudy,975,1,4,5
+13,b,experimental,post,forage,75.574,Idaly,Partly cloudy,975,1,4,5
+13,b,control,pre,look,1.788,Idaly,Partly cloudy,975,2,3,5
+13,b,control,pre,move,84.754,Idaly,Partly cloudy,975,2,3,5
+13,b,control,pre,out of sight,35.545,Idaly,Partly cloudy,975,2,3,5
+13,b,control,pre,other,0,Idaly,Partly cloudy,975,2,3,5
+13,b,control,pre,forage,143.101,Idaly,Partly cloudy,975,2,3,5
+13,b,control,playback,look,5.03,Idaly,Partly cloudy,975,2,1,3
+13,b,control,playback,move,42.589,Idaly,Partly cloudy,975,2,1,3
+13,b,control,playback,out of sight,32.137,Idaly,Partly cloudy,975,2,1,3
+13,b,control,playback,other,3.097,Idaly,Partly cloudy,975,2,1,3
+13,b,control,playback,forage,153.999,Idaly,Partly cloudy,975,2,1,3
+13,b,control,post,look,6.549,Idaly,Partly cloudy,975,1,1,2
+13,b,control,post,move,78.126,Idaly,Partly cloudy,975,1,1,2
+13,b,control,post,out of sight,35.777,Idaly,Partly cloudy,975,1,1,2
+13,b,control,post,other,1.097,Idaly,Partly cloudy,975,1,1,2
+13,b,control,post,forage,165.157,Idaly,Partly cloudy,975,1,1,2
+14,w,experimental,pre,look,19.61,Valerie,Partly cloudy,1001,1,0,1
+14,w,experimental,pre,move,9.69,Valerie,Partly cloudy,1001,1,0,1
+14,w,experimental,pre,out of sight,1.294,Valerie,Partly cloudy,1001,1,0,1
+14,w,experimental,pre,other,3.715,Valerie,Partly cloudy,1001,1,0,1
+14,w,experimental,pre,forage,217.318,Valerie,Partly cloudy,1001,1,0,1
+14,w,experimental,playback,look,35.374,Valerie,Partly cloudy,1001,3,0,3
+14,w,experimental,playback,move,130.192,Valerie,Partly cloudy,1001,3,0,3
+14,w,experimental,playback,out of sight,18.323,Valerie,Partly cloudy,1001,3,0,3
+14,w,experimental,playback,other,30.226,Valerie,Partly cloudy,1001,3,0,3
+14,w,experimental,playback,forage,73.844,Valerie,Partly cloudy,1001,3,0,3
+14,w,experimental,post,look,42.44,Valerie,Partly cloudy,1001,2,0,2
+14,w,experimental,post,move,85.511,Valerie,Partly cloudy,1001,2,0,2
+14,w,experimental,post,out of sight,43.582,Valerie,Partly cloudy,1001,2,0,2
+14,w,experimental,post,other,0,Valerie,Partly cloudy,1001,2,0,2
+14,w,experimental,post,forage,78.847,Valerie,Partly cloudy,1001,2,0,2
+14,w,control,pre,look,11.558,Valerie,Partly cloudy,1001,3,0,3
+14,w,control,pre,move,161.657,Valerie,Partly cloudy,1001,3,0,3
+14,w,control,pre,out of sight,9.236,Valerie,Partly cloudy,1001,3,0,3
+14,w,control,pre,other,5.811,Valerie,Partly cloudy,1001,3,0,3
+14,w,control,pre,forage,51.318,Valerie,Partly cloudy,1001,3,0,3
+14,w,control,playback,look,24.478,Valerie,Partly cloudy,1001,1,0,1
+14,w,control,playback,move,30.728,Valerie,Partly cloudy,1001,1,0,1
+14,w,control,playback,out of sight,0,Valerie,Partly cloudy,1001,1,0,1
+14,w,control,playback,other,0,Valerie,Partly cloudy,1001,1,0,1
+14,w,control,playback,forage,247.883,Valerie,Partly cloudy,1001,1,0,1
+14,w,control,post,look,49.967,Valerie,Partly cloudy,1001,0,0,0
+14,w,control,post,move,0,Valerie,Partly cloudy,1001,0,0,0
+14,w,control,post,out of sight,0,Valerie,Partly cloudy,1001,0,0,0
+14,w,control,post,other,53.669,Valerie,Partly cloudy,1001,0,0,0
+14,w,control,post,forage,211.138,Valerie,Partly cloudy,1001,0,0,0
+15,b,experimental,pre,look,0,Tavish,Partly cloudy,1045,1,0,1
+15,b,experimental,pre,move,0,Tavish,Partly cloudy,1045,1,0,1
+15,b,experimental,pre,out of sight,293.635,Tavish,Partly cloudy,1045,1,0,1
+15,b,experimental,pre,other,0,Tavish,Partly cloudy,1045,1,0,1
+15,b,experimental,pre,forage,0,Tavish,Partly cloudy,1045,1,0,1
+15,b,experimental,playback,look,11.935,Tavish,Partly cloudy,1045,1,0,1
+15,b,experimental,playback,move,164.335,Tavish,Partly cloudy,1045,1,0,1
+15,b,experimental,playback,out of sight,59.842,Tavish,Partly cloudy,1045,1,0,1
+15,b,experimental,playback,other,0,Tavish,Partly cloudy,1045,1,0,1
+15,b,experimental,playback,forage,24.779,Tavish,Partly cloudy,1045,1,0,1
+15,b,experimental,post,look,0,Tavish,Partly cloudy,1045,2,0,2
+15,b,experimental,post,move,32.128,Tavish,Partly cloudy,1045,2,0,2
+15,b,experimental,post,out of sight,262.237,Tavish,Partly cloudy,1045,2,0,2
+15,b,experimental,post,other,0,Tavish,Partly cloudy,1045,2,0,2
+15,b,experimental,post,forage,0,Tavish,Partly cloudy,1045,2,0,2
+15,b,control,pre,look,3.831,Tavish,Partly cloudy,1045,0,0,0
+15,b,control,pre,move,120.791,Tavish,Partly cloudy,1045,0,0,0
+15,b,control,pre,out of sight,100.312,Tavish,Partly cloudy,1045,0,0,0
+15,b,control,pre,other,0,Tavish,Partly cloudy,1045,0,0,0
+15,b,control,pre,forage,50.193,Tavish,Partly cloudy,1045,0,0,0
+15,b,control,playback,look,9.374,Tavish,Partly cloudy,1045,3,0,3
+15,b,control,playback,move,23.827,Tavish,Partly cloudy,1045,3,0,3
+15,b,control,playback,out of sight,98.196,Tavish,Partly cloudy,1045,3,0,3
+15,b,control,playback,other,0,Tavish,Partly cloudy,1045,3,0,3
+15,b,control,playback,forage,142.472,Tavish,Partly cloudy,1045,3,0,3
+15,b,control,post,look,13.137,Tavish,Partly cloudy,1045,1,0,1
+15,b,control,post,move,67.102,Tavish,Partly cloudy,1045,1,0,1
+15,b,control,post,out of sight,52.728,Tavish,Partly cloudy,1045,1,0,1
+15,b,control,post,other,0,Tavish,Partly cloudy,1045,1,0,1
+15,b,control,post,forage,149.877,Tavish,Partly cloudy,1045,1,0,1
+16,w,experimental,pre,look,128.178,Idaly,Partly cloudy,1519,3,0,3
+16,w,experimental,pre,move,18.82,Idaly,Partly cloudy,1519,3,0,3
+16,w,experimental,pre,out of sight,33.813,Idaly,Partly cloudy,1519,3,0,3
+16,w,experimental,pre,other,0,Idaly,Partly cloudy,1519,3,0,3
+16,w,experimental,pre,forage,78.206,Idaly,Partly cloudy,1519,3,0,3
+16,w,experimental,playback,look,78.497,Idaly,Partly cloudy,1519,5,0,5
+16,w,experimental,playback,move,92.269,Idaly,Partly cloudy,1519,5,0,5
+16,w,experimental,playback,out of sight,24.84,Idaly,Partly cloudy,1519,5,0,5
+16,w,experimental,playback,other,0,Idaly,Partly cloudy,1519,5,0,5
+16,w,experimental,playback,forage,59.913,Idaly,Partly cloudy,1519,5,0,5
+16,w,experimental,post,look,0,Idaly,Partly cloudy,1519,2,0,2
+16,w,experimental,post,move,14.551,Idaly,Partly cloudy,1519,2,0,2
+16,w,experimental,post,out of sight,240.883,Idaly,Partly cloudy,1519,2,0,2
+16,w,experimental,post,other,0,Idaly,Partly cloudy,1519,2,0,2
+16,w,experimental,post,forage,32.532,Idaly,Partly cloudy,1519,2,0,2
+16,w,control,pre,look,195.789,Idaly,Partly cloudy,1519,1,1,2
+16,w,control,pre,move,17.305,Idaly,Partly cloudy,1519,1,1,2
+16,w,control,pre,out of sight,19.619,Idaly,Partly cloudy,1519,1,1,2
+16,w,control,pre,other,0,Idaly,Partly cloudy,1519,1,1,2
+16,w,control,pre,forage,3.954,Idaly,Partly cloudy,1519,1,1,2
+16,w,control,playback,look,25.432,Idaly,Partly cloudy,1519,2,1,3
+16,w,control,playback,move,43.364,Idaly,Partly cloudy,1519,2,1,3
+16,w,control,playback,out of sight,219.939,Idaly,Partly cloudy,1519,2,1,3
+16,w,control,playback,other,0,Idaly,Partly cloudy,1519,2,1,3
+16,w,control,playback,forage,0,Idaly,Partly cloudy,1519,2,1,3
+16,w,control,post,look,10.697,Idaly,Partly cloudy,1519,2,0,2
+16,w,control,post,move,48.109,Idaly,Partly cloudy,1519,2,0,2
+16,w,control,post,out of sight,235.187,Idaly,Partly cloudy,1519,2,0,2
+16,w,control,post,other,0,Idaly,Partly cloudy,1519,2,0,2
+16,w,control,post,forage,0,Idaly,Partly cloudy,1519,2,0,2
+17,w,experimental,pre,look,18.171,Valerie,Overcast,914,2,0,2
+17,w,experimental,pre,move,62.169,Valerie,Overcast,914,2,0,2
+17,w,experimental,pre,out of sight,132.631,Valerie,Overcast,914,2,0,2
+17,w,experimental,pre,other,0,Valerie,Overcast,914,2,0,2
+17,w,experimental,pre,forage,64.337,Valerie,Overcast,914,2,0,2
+17,w,experimental,playback,look,25.159,Valerie,Overcast,914,2,0,2
+17,w,experimental,playback,move,114.135,Valerie,Overcast,914,2,0,2
+17,w,experimental,playback,out of sight,17.401,Valerie,Overcast,914,2,0,2
+17,w,experimental,playback,other,0,Valerie,Overcast,914,2,0,2
+17,w,experimental,playback,forage,104.664,Valerie,Overcast,914,2,0,2
+17,w,experimental,post,look,12.797,Valerie,Overcast,914,4,1,5
+17,w,experimental,post,move,156.194,Valerie,Overcast,914,4,1,5
+17,w,experimental,post,out of sight,103.775,Valerie,Overcast,914,4,1,5
+17,w,experimental,post,other,0,Valerie,Overcast,914,4,1,5
+17,w,experimental,post,forage,22.209,Valerie,Overcast,914,4,1,5
+17,w,control,pre,look,0,Valerie,Overcast,914,3,0,3
+17,w,control,pre,move,86.943,Valerie,Overcast,914,3,0,3
+17,w,control,pre,out of sight,202.974,Valerie,Overcast,914,3,0,3
+17,w,control,pre,other,0,Valerie,Overcast,914,3,0,3
+17,w,control,pre,forage,5.833,Valerie,Overcast,914,3,0,3
+17,w,control,playback,look,3.167,Valerie,Overcast,914,2,0,2
+17,w,control,playback,move,109.288,Valerie,Overcast,914,2,0,2
+17,w,control,playback,out of sight,167.791,Valerie,Overcast,914,2,0,2
+17,w,control,playback,other,0,Valerie,Overcast,914,2,0,2
+17,w,control,playback,forage,18.016,Valerie,Overcast,914,2,0,2
+17,w,control,post,look,1.204,Valerie,Overcast,914,1,0,1
+17,w,control,post,move,111.81,Valerie,Overcast,914,1,0,1
+17,w,control,post,out of sight,27.325,Valerie,Overcast,914,1,0,1
+17,w,control,post,other,0,Valerie,Overcast,914,1,0,1
+17,w,control,post,forage,153.666,Valerie,Overcast,914,1,0,1
+18,b,experimental,pre,look,0,Tavish,Overcast,1066,2,0,2
+18,b,experimental,pre,move,26.776,Tavish,Overcast,1066,2,0,2
+18,b,experimental,pre,out of sight,161.003,Tavish,Overcast,1066,2,0,2
+18,b,experimental,pre,other,0,Tavish,Overcast,1066,2,0,2
+18,b,experimental,pre,forage,97.313,Tavish,Overcast,1066,2,0,2
+18,b,experimental,playback,look,12.109,Tavish,Overcast,1066,2,0,2
+18,b,experimental,playback,move,149.74,Tavish,Overcast,1066,2,0,2
+18,b,experimental,playback,out of sight,90.96,Tavish,Overcast,1066,2,0,2
+18,b,experimental,playback,other,0,Tavish,Overcast,1066,2,0,2
+18,b,experimental,playback,forage,23.618,Tavish,Overcast,1066,2,0,2
+18,b,experimental,post,look,0,Tavish,Overcast,1066,1,0,1
+18,b,experimental,post,move,68.847,Tavish,Overcast,1066,1,0,1
+18,b,experimental,post,out of sight,221.922,Tavish,Overcast,1066,1,0,1
+18,b,experimental,post,other,0,Tavish,Overcast,1066,1,0,1
+18,b,experimental,post,forage,0,Tavish,Overcast,1066,1,0,1
+18,b,control,pre,look,5.142,Tavish,Overcast,1066,1,0,1
+18,b,control,pre,move,37.856,Tavish,Overcast,1066,1,0,1
+18,b,control,pre,out of sight,0,Tavish,Overcast,1066,1,0,1
+18,b,control,pre,other,14.046,Tavish,Overcast,1066,1,0,1
+18,b,control,pre,forage,218.027,Tavish,Overcast,1066,1,0,1
+18,b,control,playback,look,16.934,Tavish,Overcast,1066,2,0,2
+18,b,control,playback,move,17.95,Tavish,Overcast,1066,2,0,2
+18,b,control,playback,out of sight,95.511,Tavish,Overcast,1066,2,0,2
+18,b,control,playback,other,0,Tavish,Overcast,1066,2,0,2
+18,b,control,playback,forage,146.57,Tavish,Overcast,1066,2,0,2
+18,b,control,post,look,0,Tavish,Overcast,1066,1,0,1
+18,b,control,post,move,28.979,Tavish,Overcast,1066,1,0,1
+18,b,control,post,out of sight,73.015,Tavish,Overcast,1066,1,0,1
+18,b,control,post,other,0.903,Tavish,Overcast,1066,1,0,1
+18,b,control,post,forage,188.794,Tavish,Overcast,1066,1,0,1
+19,b,experimental,pre,look,40.509,Idaly,Rain,1025,3,0,3
+19,b,experimental,pre,move,78.792,Idaly,Rain,1025,3,0,3
+19,b,experimental,pre,out of sight,152.567,Idaly,Rain,1025,3,0,3
+19,b,experimental,pre,other,4.001,Idaly,Rain,1025,3,0,3
+19,b,experimental,pre,forage,0,Idaly,Rain,1025,3,0,3
+19,b,experimental,playback,look,0,Idaly,Rain,1025,0,0,0
+19,b,experimental,playback,move,0,Idaly,Rain,1025,0,0,0
+19,b,experimental,playback,out of sight,299.324,Idaly,Rain,1025,0,0,0
+19,b,experimental,playback,other,0,Idaly,Rain,1025,0,0,0
+19,b,experimental,playback,forage,0,Idaly,Rain,1025,0,0,0
+19,b,experimental,post,look,0,Idaly,Rain,1025,2,0,2
+19,b,experimental,post,move,14.715,Idaly,Rain,1025,2,0,2
+19,b,experimental,post,out of sight,277.849,Idaly,Rain,1025,2,0,2
+19,b,experimental,post,other,0,Idaly,Rain,1025,2,0,2
+19,b,experimental,post,forage,0,Idaly,Rain,1025,2,0,2
+19,b,control,pre,look,21.06,Idaly,Rain,1025,4,0,4
+19,b,control,pre,move,39.678,Idaly,Rain,1025,4,0,4
+19,b,control,pre,out of sight,189.844,Idaly,Rain,1025,4,0,4
+19,b,control,pre,other,2.974,Idaly,Rain,1025,4,0,4
+19,b,control,pre,forage,23.166,Idaly,Rain,1025,4,0,4
+19,b,control,playback,look,1.023,Idaly,Rain,1025,2,0,2
+19,b,control,playback,move,5.287,Idaly,Rain,1025,2,0,2
+19,b,control,playback,out of sight,116.27,Idaly,Rain,1025,2,0,2
+19,b,control,playback,other,2.193,Idaly,Rain,1025,2,0,2
+19,b,control,playback,forage,167.289,Idaly,Rain,1025,2,0,2
+19,b,control,post,look,0,Idaly,Rain,1025,2,1,3
+19,b,control,post,move,34.031,Idaly,Rain,1025,2,1,3
+19,b,control,post,out of sight,243.634,Idaly,Rain,1025,2,1,3
+19,b,control,post,other,0,Idaly,Rain,1025,2,1,3
+19,b,control,post,forage,17.675,Idaly,Rain,1025,2,1,3
+20,b,experimental,pre,look,4.843,Valerie,Partly cloudy,198,0,2,2
+20,b,experimental,pre,move,59.274,Valerie,Partly cloudy,198,0,2,2
+20,b,experimental,pre,out of sight,27.419,Valerie,Partly cloudy,198,0,2,2
+20,b,experimental,pre,other,173.096,Valerie,Partly cloudy,198,0,2,2
+20,b,experimental,pre,forage,17.274,Valerie,Partly cloudy,198,0,2,2
+20,b,experimental,playback,look,6.584,Valerie,Partly cloudy,198,1,3,4
+20,b,experimental,playback,move,66.852,Valerie,Partly cloudy,198,1,3,4
+20,b,experimental,playback,out of sight,68.41,Valerie,Partly cloudy,198,1,3,4
+20,b,experimental,playback,other,98.792,Valerie,Partly cloudy,198,1,3,4
+20,b,experimental,playback,forage,37.853,Valerie,Partly cloudy,198,1,3,4
+20,b,experimental,post,look,4.577,Valerie,Partly cloudy,198,0,4,4
+20,b,experimental,post,move,74.09,Valerie,Partly cloudy,198,0,4,4
+20,b,experimental,post,out of sight,212.033,Valerie,Partly cloudy,198,0,4,4
+20,b,experimental,post,other,0,Valerie,Partly cloudy,198,0,4,4
+20,b,experimental,post,forage,0,Valerie,Partly cloudy,198,0,4,4
+20,b,control,pre,look,0,Valerie,Partly cloudy,198,2,0,2
+20,b,control,pre,move,142.178,Valerie,Partly cloudy,198,2,0,2
+20,b,control,pre,out of sight,69.713,Valerie,Partly cloudy,198,2,0,2
+20,b,control,pre,other,0,Valerie,Partly cloudy,198,2,0,2
+20,b,control,pre,forage,71.696,Valerie,Partly cloudy,198,2,0,2
+20,b,control,playback,look,0,Valerie,Partly cloudy,198,2,1,3
+20,b,control,playback,move,49.65,Valerie,Partly cloudy,198,2,1,3
+20,b,control,playback,out of sight,128.821,Valerie,Partly cloudy,198,2,1,3
+20,b,control,playback,other,9.808,Valerie,Partly cloudy,198,2,1,3
+20,b,control,playback,forage,95.205,Valerie,Partly cloudy,198,2,1,3
+20,b,control,post,look,7.865,Valerie,Partly cloudy,198,2,1,3
+20,b,control,post,move,61.953,Valerie,Partly cloudy,198,2,1,3
+20,b,control,post,out of sight,0.385,Valerie,Partly cloudy,198,2,1,3
+20,b,control,post,other,51.384,Valerie,Partly cloudy,198,2,1,3
+20,b,control,post,forage,166.43,Valerie,Partly cloudy,198,2,1,3
+21,w,experimental,pre,look,0,Tavish,Overcast,1896,0,0,0
+21,w,experimental,pre,move,0,Tavish,Overcast,1896,0,0,0
+21,w,experimental,pre,out of sight,285.804,Tavish,Overcast,1896,0,0,0
+21,w,experimental,pre,other,0,Tavish,Overcast,1896,0,0,0
+21,w,experimental,pre,forage,0,Tavish,Overcast,1896,0,0,0
+21,w,experimental,playback,look,0,Tavish,Overcast,1896,0,0,0
+21,w,experimental,playback,move,0,Tavish,Overcast,1896,0,0,0
+21,w,experimental,playback,out of sight,292.433,Tavish,Overcast,1896,0,0,0
+21,w,experimental,playback,other,0,Tavish,Overcast,1896,0,0,0
+21,w,experimental,playback,forage,0,Tavish,Overcast,1896,0,0,0
+21,w,experimental,post,look,0,Tavish,Overcast,1896,0,0,0
+21,w,experimental,post,move,0,Tavish,Overcast,1896,0,0,0
+21,w,experimental,post,out of sight,286.449,Tavish,Overcast,1896,0,0,0
+21,w,experimental,post,other,0,Tavish,Overcast,1896,0,0,0
+21,w,experimental,post,forage,0,Tavish,Overcast,1896,0,0,0
+21,w,control,pre,look,171.137,Tavish,Overcast,1896,1,0,1
+21,w,control,pre,move,40.148,Tavish,Overcast,1896,1,0,1
+21,w,control,pre,out of sight,0,Tavish,Overcast,1896,1,0,1
+21,w,control,pre,other,8.549,Tavish,Overcast,1896,1,0,1
+21,w,control,pre,forage,25.434,Tavish,Overcast,1896,1,0,1
+21,w,control,playback,look,0,Tavish,Overcast,1896,0,0,0
+21,w,control,playback,move,0,Tavish,Overcast,1896,0,0,0
+21,w,control,playback,out of sight,289.221,Tavish,Overcast,1896,0,0,0
+21,w,control,playback,other,0,Tavish,Overcast,1896,0,0,0
+21,w,control,playback,forage,0,Tavish,Overcast,1896,0,0,0
+21,w,control,post,look,14.679,Tavish,Overcast,1896,1,0,1
+21,w,control,post,move,76.593,Tavish,Overcast,1896,1,0,1
+21,w,control,post,out of sight,33.01,Tavish,Overcast,1896,1,0,1
+21,w,control,post,other,0,Tavish,Overcast,1896,1,0,1
+21,w,control,post,forage,127.085,Tavish,Overcast,1896,1,0,1
+22,w,experimental,pre,look,0,Idaly,Overcast,975,6,0,6
+22,w,experimental,pre,move,89.253,Idaly,Overcast,975,6,0,6
+22,w,experimental,pre,out of sight,63.547,Idaly,Overcast,975,6,0,6
+22,w,experimental,pre,other,0,Idaly,Overcast,975,6,0,6
+22,w,experimental,pre,forage,95.616,Idaly,Overcast,975,6,0,6
+22,w,experimental,playback,look,0.631,Idaly,Overcast,975,8,0,8
+22,w,experimental,playback,move,112.596,Idaly,Overcast,975,8,0,8
+22,w,experimental,playback,out of sight,137.382,Idaly,Overcast,975,8,0,8
+22,w,experimental,playback,other,0,Idaly,Overcast,975,8,0,8
+22,w,experimental,playback,forage,35.901,Idaly,Overcast,975,8,0,8
+22,w,experimental,post,look,0,Idaly,Overcast,975,5,0,5
+22,w,experimental,post,move,11.084,Idaly,Overcast,975,5,0,5
+22,w,experimental,post,out of sight,266.117,Idaly,Overcast,975,5,0,5
+22,w,experimental,post,other,0,Idaly,Overcast,975,5,0,5
+22,w,experimental,post,forage,8.972,Idaly,Overcast,975,5,0,5
+22,w,control,pre,look,20.596,Idaly,Overcast,975,5,0,5
+22,w,control,pre,move,101.036,Idaly,Overcast,975,5,0,5
+22,w,control,pre,out of sight,74.602,Idaly,Overcast,975,5,0,5
+22,w,control,pre,other,28.809,Idaly,Overcast,975,5,0,5
+22,w,control,pre,forage,30.829,Idaly,Overcast,975,5,0,5
+22,w,control,playback,look,80.912,Idaly,Overcast,975,2,1,3
+22,w,control,playback,move,34.154,Idaly,Overcast,975,2,1,3
+22,w,control,playback,out of sight,34.517,Idaly,Overcast,975,2,1,3
+22,w,control,playback,other,2.253,Idaly,Overcast,975,2,1,3
+22,w,control,playback,forage,106.468,Idaly,Overcast,975,2,1,3
+22,w,control,post,look,0.419,Idaly,Overcast,975,6,0,6
+22,w,control,post,move,129.667,Idaly,Overcast,975,6,0,6
+22,w,control,post,out of sight,137.635,Idaly,Overcast,975,6,0,6
+22,w,control,post,other,0,Idaly,Overcast,975,6,0,6
+22,w,control,post,forage,0,Idaly,Overcast,975,6,0,6
