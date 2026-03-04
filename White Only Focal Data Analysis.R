@@ -37,7 +37,7 @@ n_distinct(data_wo_mixed$Trial) #21 trials, which is accurate
 # White
 w_f_data <- data_wo_mixed%>% filter(Species == "w")
 #view(w_f_data)
-n_distinct(w_f_data$Trial) # 12
+n_distinct(w_f_data$Trial) # 9
 
 data <- w_f_data
 
@@ -90,20 +90,18 @@ Slook_sansint <- glmmTMB(Duration ~ Treatment + Period + (1|Trial),
                          ziformula = ~ 1,
                          data = look_data,
                          offset = log(total_time_in_sight+1e-6))
-summary(Sforage_sansint) # p=0.000885 ***
-summary(Slook_sansint) # p=0.028 *  
-summary(Smove_sansint) # p=0.0369 *  
+summary(Sforage_sansint) # p=
+summary(Slook_sansint) # p= 
+summary(Smove_sansint) # p= 
 
-anova(Sforage_model, Sforage_sansint, test="LRT") # p=0.006092 ** YAY
-anova(Slook_model, Slook_sansint, test="LRT") # p=0.7925 eh
-anova(Smove_model, Smove_sansint, test="LRT") # p=0.01858 * YAY
+anova(Sforage_model, Sforage_sansint, test="LRT") # p=0.09821 .
+anova(Slook_model, Slook_sansint, test="LRT") # p=0.7379 
+anova(Smove_model, Smove_sansint, test="LRT") # p=0.6337
 
-# pairwise, only FORAGE was SIGNIFICANT   0.0062 ----
+# pairwise, nothing was significant ----
 Sforage_emm <- emmeans(Sforage_model, pairwise ~ Period | Treatment)
 Sforage_emm 
 #plot(Sforage_emm)
-# playback - pre experimental contrast p = 0.0062 !!, none of the control period contrasts are significant as expected
-# this should mean CAPUCHINS FORAGE SIG. LESS DURING EXPERIMENTAL PLAYBACK
 Slook_emm <- emmeans(Slook_model, pairwise ~ Period | Treatment)
 Slook_emm
 #plot(Slook_emm)
