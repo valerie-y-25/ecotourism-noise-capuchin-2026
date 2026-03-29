@@ -190,7 +190,3 @@ print(combined_plot)
 
 #sink()
 
-
-
-
-

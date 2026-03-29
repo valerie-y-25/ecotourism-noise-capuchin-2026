@@ -351,8 +351,3 @@ cor(look_data$Total_indiv, look_data$Duration) # -0.06067175
 cor(move_data$Total_indiv, move_data$Duration) # 0.3646775
 
 #sink()
-
-
-
-
-
