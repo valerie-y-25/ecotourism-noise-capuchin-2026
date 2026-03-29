@@ -1,5 +1,3 @@
-setwd("/Users/anyangyu/Desktop/CAP Code and Results")
-
 library("glmmTMB")
 library("lme4")
 library("lmerTest")
@@ -11,52 +9,50 @@ library("see")
 library("patchwork")
 library("ggpattern")
 library("egg")
-library("car")
 library("tidyverse")
 library("emmeans")
 library("partR2")
 library("ggplot2")
 library("ggpubr")
-library("egg")
 library("here")
 library("moments")
 library("dplyr")
 
-# FOR WHITE
-    # foraging is still lower during playback when compared to pre and post in experimental
-    # looking insignificant
-    # movement still higher during playback when compared to pre in experimental
+# SUMMARY
+    # Experimental playback still significantly reduced foraging overall. 
+    # Looking behavior is significantly higher during playback than in post period.
+    # Movement was not significant anywhere.
 
 # Scan Data 
-gdata <- read.csv("finalscan.csv")
+gdata <- read.csv("data/finalscan.csv")
 gdata <- gdata %>% select(-Ethogram, -X.1) # earlier version of the data had two random columns with ethogram and a blank -X.1 labeled 
 gdata <- gdata %>% filter(Trial !=2) # remove mixed
-#view(gdata)
-#n_distinct(gdata$Trial)
+  #view(gdata)
+  #n_distinct(gdata$Trial)
 
-w_s_data <- gdata %>% filter(Species == "w")
-#view(w_s_data)
+b_s_data <- gdata %>% filter(Species == "b")
+  #view(b_s_data)
 
 # Since we have count data, run Poisson first.
 
 # ---------- Poisson Test ----------
 p_forage <- glmmTMB(Forage ~ Period * Treatment + (1|Trial), 
                     family = poisson, 
-                    data = w_s_data,
+                    data = b_s_data,
                     offset = log(Total+1))
 res_p_forage <- simulateResiduals(p_forage)
 testDispersion(res_p_forage) # no dispersion problem
 
 p_look <- glmmTMB(Look ~ Period * Treatment + (1|Trial), 
                   family = poisson, 
-                  data = w_s_data,
+                  data = b_s_data,
                   offset = log(Total+1))
 res_p_look <- simulateResiduals(p_look)
 testDispersion(res_p_look) # slight overdispersion, not significant
 
 p_move <- glmmTMB(Move ~ Period * Treatment + (1|Trial), 
                   family = poisson, 
-                  data = w_s_data,
+                  data = b_s_data,
                   offset = log(Total+1))
 res_p_move <- simulateResiduals(p_move)
 testDispersion(res_p_move) # no dispersion problem
@@ -66,16 +62,16 @@ testDispersion(res_p_move) # no dispersion problem
 # ---------- Negative Binomial Test ----------
 nb_forage <- glmmTMB(Forage ~ Period * Treatment + (1|Trial), 
                      family = nbinom2, 
-                     data = w_s_data,
+                     data = b_s_data,
                      offset = log(Total+1))
 nb_look <- glmmTMB(Look ~ Period * Treatment + (1|Trial), 
                    family = nbinom2, 
-                   data = w_s_data,
+                   data = b_s_data,
                    offset = log(Total+1))
 
 nb_move <- glmmTMB(Move ~ Period * Treatment + (1|Trial), 
                    family = nbinom2, 
-                   data = w_s_data,
+                   data = b_s_data,
                    offset = log(Total+1)) # THIS SPITS OUT ERROR (I will be using poisson anyways)
 # AIC test
 AIC (p_forage, nb_forage, p_look, nb_look, p_move, nb_move)
@@ -95,15 +91,15 @@ summary(p_move) # TreatmentExperimental            -0.03677    0.12617  -0.291  
 # ---------- remove interaction and ANOVA/emmeans ----------
 p_sansint_forage <- glmmTMB(Forage ~  Period + Treatment + (1|Trial), 
                             family = poisson, 
-                            data = w_s_data,
+                            data = b_s_data,
                             offset = log(Total+1))
 nb_sansint_look <- glmmTMB(Look ~  Period + Treatment + (1|Trial), 
                            family = nbinom2, 
-                           data = w_s_data,
+                           data = b_s_data,
                            offset = log(Total+1))
 p_sansint_move <- glmmTMB(Move ~  Period + Treatment + (1|Trial), 
                           family = poisson, 
-                          data = w_s_data,
+                          data = b_s_data,
                           offset = log(Total+1))
 summary(p_sansint_forage) # 1.84e-05 ***
 summary(nb_sansint_look) # 5.12e-05 ***

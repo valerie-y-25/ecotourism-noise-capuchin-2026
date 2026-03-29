@@ -1,5 +1,3 @@
-getwd()
-setwd("/Users/anyangyu/Desktop/CAP Code and Results")
 #sink("Focal Data Analysis and ICC Test output.txt")
 library("glmmTMB")
 library("lme4")
@@ -25,9 +23,10 @@ library("dplyr")
 library("readxl")
 library("psych")
 
+rm(list = ls())
 
 # Focal Data used is called "Focal Sampling Data - combined BORIS data.xlsx" found in BOX
-data <- read.csv("finalfocal.csv")
+data <- read.csv("data/finalfocal.csv")
       View(data)
       #colnames(data)
     #hist(data$Duration, breaks = 30, main = "Histogram of Duration", xlab = "Duration", col = "skyblue")

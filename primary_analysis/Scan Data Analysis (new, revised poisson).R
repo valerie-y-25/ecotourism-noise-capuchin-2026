@@ -1,16 +1,12 @@
-setwd("/Users/anyangyu/Desktop/CAP Code and Results")
-
 library("glmmTMB")
 library("lme4")
 library("lmerTest")
 library("performance")
-library("car")
 library("MuMIn")
 library("DHARMa")
 library("see")
 library("patchwork")
 library("ggpattern")
-library("egg")
 library("car")
 library("tidyverse")
 library("emmeans")
@@ -22,8 +18,10 @@ library("here")
 library("moments")
 library("dplyr")
 
+rm(list = ls())
+
 # Scan Data
-gdata <- read.csv("finalscan.csv")
+gdata <- read.csv("data/finalscan.csv")
 #view(gdata)
 gdata <- gdata %>% select(-Ethogram, -X.1) # earlier version of the data had two random columns with ethogram and a blank -X.1 labeled 
 # View(gdata)
