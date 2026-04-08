@@ -17,11 +17,10 @@ library("ggpubr")
 library("here")
 library("moments")
 library("dplyr")
-
+rm(list = ls())
 # SUMMARY
     # Experimental playback still significantly reduced foraging overall. 
-    # Looking behavior is significantly higher during playback than in post period.
-    # Movement was not significant anywhere.
+    # Looking was higher overall in experimental treatment with no evidence that this effect varied across periods though.
 
 # Scan Data 
 gdata <- read.csv("data/finalscan.csv")
@@ -48,7 +47,7 @@ p_look <- glmmTMB(Look ~ Period * Treatment + (1|Trial),
                   data = b_s_data,
                   offset = log(Total+1))
 res_p_look <- simulateResiduals(p_look)
-testDispersion(res_p_look) # slight overdispersion, not significant
+testDispersion(res_p_look) # no dispersion problem
 
 p_move <- glmmTMB(Move ~ Period * Treatment + (1|Trial), 
                   family = poisson, 
@@ -77,16 +76,14 @@ nb_move <- glmmTMB(Move ~ Period * Treatment + (1|Trial),
 AIC (p_forage, nb_forage, p_look, nb_look, p_move, nb_move)
 # forage is same, within 1 unit difference, we will use poisson
 # look actually is notably lower AIC with nb model
-#       we will use nb to account for slight overdispersion even though DHARMa didn't flag it.
 #       ~9 AIC difference is too large to ignore
 # move doesn't give me an AIC for nb, figures it spit error
 
 
 # ---------- FINAL SCAN MODELS ----------
-summary(p_forage) # TreatmentExperimental             -0.9019     0.2121  -4.253 2.11e-05 ***
-
-summary(nb_look) # TreatmentExperimental              1.0710     0.3417   3.134  0.00172 **  
-summary(p_move) # TreatmentExperimental            -0.03677    0.12617  -0.291    0.771     
+summary(p_forage) # TreatmentExperimental            2.11e-05 ***
+summary(nb_look) # TreatmentExperimental             0.00172 **  
+summary(p_move) # TreatmentExperimental              0.771     
 
 # ---------- remove interaction and ANOVA/emmeans ----------
 p_sansint_forage <- glmmTMB(Forage ~  Period + Treatment + (1|Trial), 
@@ -103,7 +100,7 @@ p_sansint_move <- glmmTMB(Move ~  Period + Treatment + (1|Trial),
                           offset = log(Total+1))
 summary(p_sansint_forage) # 1.84e-05 ***
 summary(nb_sansint_look) # 5.12e-05 ***
-summary(p_sansint_move) # n/a
+summary(p_sansint_move) # 0.770    
 
 # ANOVA
 anova(p_forage, p_sansint_forage, test="LRT") # 0.005251 **
@@ -115,10 +112,14 @@ summary(forage_emm) # 0.0486 playback-post (z = -4.202), 0.0041 playback-pre (z 
 # they foraged less during the playback!!
 
 look_emm <- emmeans(nb_look, pairwise ~ Period | Treatment)
-summary(look_emm) # 0.0255 playback-post hmm... interesting?
+summary(look_emm) # 0.0255 playback-post 
+#hmm... interesting? looked more duing playback with 2.596 z ration 
+#the treatment experimental was sig, but the LRT wasn't sig 
 
 move_emm <- emmeans(p_move, pairwise ~ Period | Treatment)
 summary(move_emm) # nothing
 
 
+# I think all I can say is that foraging decreased?
+# We can say that the look more overall in experimental.
 

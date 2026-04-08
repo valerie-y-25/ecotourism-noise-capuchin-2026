@@ -27,7 +27,7 @@ rm(list = ls())
 
 # Focal Data used is called "Focal Sampling Data - combined BORIS data.xlsx" found in BOX
 data <- read.csv("data/finalfocal.csv")
-      View(data)
+      #View(data)
       #colnames(data)
     #hist(data$Duration, breaks = 30, main = "Histogram of Duration", xlab = "Duration", col = "skyblue")
       # duration is right-skewed, data set is not normal!!
@@ -214,19 +214,45 @@ plot(simulation_Smove) # all good in QQ
 # PLOT: filter out "out of sight" and "other" behaviors 
 filtered_data <- data %>%
   filter(Behavior %in% c("forage", "look", "move"))
+# everything is lowercase --> uppercase labels
+filtered_data$Behavior <- factor(
+  filtered_data$Behavior,
+  levels =c("forage", "look", "move"),
+  labels = c("Forage", "Look", "Move"),
+)
 
-filtered_data$Period <- factor(filtered_data$Period, levels = c("pre", "playback", "post"))
+filtered_data$Period <- factor(filtered_data$Period, 
+                               levels = c("pre", "playback", "post"),
+                               labels = c("Pre", "Playback", "Post"))
+filtered_data$Treatment <- factor(filtered_data$Treatment, 
+                               levels = c("control", "experimental"),
+                               labels = c("Control", "Experimental"))
 
 # create the box-and-whisker plot with proper ordering of Period
-ggplot(filtered_data, aes(x = Period, y = Duration, fill = Treatment)) +
-  geom_boxplot(position = position_dodge(0.8), color = "black") +  
-  facet_wrap(~Behavior, scales = "free_y") +
-  theme_minimal() +
-  labs(title = "Focal Sampling Distribution by Period and Treatment",
+focal_plot <- ggplot(filtered_data, aes(x = Period, y = Duration, fill = Treatment)) +
+  geom_boxplot(width = 0.7, outlier.size=1.5, size= 0.4) +
+  scale_y_continuous(expand = expansion(mult = c(0.05,0.08)))+
+  facet_wrap(~Behavior, scales = "free_y", nrow = 1) +
+  labs(
        x = "Period",
        y = "Duration (s)") +
-  scale_fill_manual(values = c("control" = "lightblue", "experimental" = "orange")) +
-  theme(text = element_text(size = 14))
+  theme_classic(base_family = "Times", base_size = 12) +
+  scale_fill_manual(values = c("Control" = "lightblue", "Experimental" = "orange")) +
+  theme(
+    strip.background = element_blank())  +
+  plot_annotation(
+    title = "Focal Sampling Distributions", 
+    theme = theme(plot.title=element_text(family = "Times",size = 15)))
+print(focal_plot)
+
+ggsave(
+  "figures/focal_plot.pdf",
+  focal_plot,
+  width = 8,
+  height = 4,
+  units = "in",
+  dpi = 600
+)
 
 #   ----------------- other random tests -----------------  
 

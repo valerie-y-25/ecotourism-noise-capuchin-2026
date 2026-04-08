@@ -24,167 +24,149 @@ rm(list = ls())
 gdata <- read.csv("data/finalscan.csv")
 #view(gdata)
 gdata <- gdata %>% select(-Ethogram, -X.1) # earlier version of the data had two random columns with ethogram and a blank -X.1 labeled 
-# View(gdata)
-hist(gdata$Move) # forage and look are right-skewwed
-hist(gdata$Forage^.5)
-hist(log(gdata$Look)) 
 
-# Since we have count data, run Poisson first.
+# We determined that species has an effect for Look and Move, but not Forage.
+#       Forage can remain with Species as additive.
+#       Look ~ Species * Period * Treatment + (1|Trial)
+#       Move ~ Species * Period * Treatment + (1|Trial)
+# Poisson works best for Forage and Move.
+# Neg Binom is best for Look due to significant AIC improvement from Poisson.
 
-# ---------- Poisson Test WITH Species ----------
+# FINAL MODELS ----
+# ---------- Forage and Move Poisson ----------
 p_forage <- glmmTMB(Forage ~ Species + Period * Treatment + (1|Trial), 
                           family = poisson, 
                           data = gdata,
                           offset = log(Total+1))
-res_p_forage <- simulateResiduals(p_forage)
-testDispersion(res_p_forage) # no dispersion problem
 
-p_look <- glmmTMB(Look ~ Species + Period * Treatment + (1|Trial), 
+p_move <- glmmTMB(Move ~ Species * Period * Treatment + (1|Trial), 
                         family = poisson, 
                         data = gdata,
                         offset = log(Total+1))
-res_p_look <- simulateResiduals(p_look)
-testDispersion(res_p_look) # slight overdispersion, not significant
 
-p_move <- glmmTMB(Move ~ Species + Period * Treatment + (1|Trial), 
-                        family = poisson, 
-                        data = gdata,
-                        offset = log(Total+1))
-res_p_move <- simulateResiduals(p_move)
-testDispersion(res_p_move) # no dispersion problem
-
-# just incase, I'll still test negative binomial
-
-# ---------- Negative Binomial Test WITH Species ----------
-nb_forage <- glmmTMB(Forage ~ Species+Period * Treatment + (1|Trial), 
-                     family = nbinom2, 
-                     data = gdata,
-                     offset = log(Total+1))
-nb_look <- glmmTMB(Look ~ Species+Period * Treatment + (1|Trial), 
+# ---------- Look Negative Binomial Test ----------
+nb_look <- glmmTMB(Look ~ Species * Period * Treatment + (1|Trial), 
                    family = nbinom2, 
                    data = gdata,
                    offset = log(Total+1))
 
-nb_move <- glmmTMB(Move ~ Species+Period * Treatment + (1|Trial), 
-                   family = nbinom2, 
-                   data = gdata,
-                   offset = log(Total+1)) # THIS SPITS OUT ERROR (I will be using poisson anyways)
-# AIC test
-AIC (p_forage, nb_forage, p_look, nb_look, p_move, nb_move)
-# forage is same, within 1 unit difference, we will use poisson
-# look actually is notably lower AIC with nb model (p_look 514.2312 VS nb_look 491.3937)
-#       we will use nb to account for slight overdispersion even though DHARMa didn't flag it.
-#       22.84 AIC difference is too large to ignore
-# move doesn't give me an AIC for nb, figures it spit error
-
-
-
-# ---------- test to see if Species affects anything ---------- 
-p_sansS_forage <- glmmTMB(Forage ~ Period * Treatment + (1|Trial), 
-                    family = poisson, 
-                    data = gdata,
-                    offset = log(Total+1))
-
-nb_sansSlook <- glmmTMB(Look ~ Period * Treatment + (1|Trial), 
-                        family = nbinom2, 
-                        data = gdata,
-                        offset = log(Total+1))
-
-p_sansS_move <- glmmTMB(Move ~ Period * Treatment + (1|Trial), 
-                  family = poisson, 
-                  data = gdata,
-                  offset = log(Total+1))
-AIC (p_forage, p_sansS_forage, nb_look, nb_sansSlook, p_move, p_sansS_move)
-# all < 2 AIC units, models essentially equivalent, Species is biologically relevant so retained.
-
 # ---------- FINAL SCAN MODELS WITH Species ----------
-summary(p_forage) # TreatmentExperimental            -0.829754   0.145350  -5.709 1.14e-08 ***
-summary(nb_look) #TreatmentExperimental             0.68080    0.27259   2.498   0.0125 *  
-summary(p_move) #TreatmentExperimental             0.183889   0.087374   2.105   0.0353 * 
+summary(p_forage) # TreatmentExperimental            z -5.709  p 1.14e-08 ***
+summary(nb_look)  # TreatmentExperimental              z 3.352   p 0.000802 ***  
+summary(p_move)   # TreatmentExperimental             p 0.7644, HOWEVER 
+                  #       Speciesw:TreatmentExperimental  p 0.0266 *
+        
 
 # ---------- remove interaction and ANOVA/emmeans ----------
 p_sansint_forage <- glmmTMB(Forage ~ Species + Period + Treatment + (1|Trial), 
                     family = poisson, 
                     data = gdata,
                     offset = log(Total+1))
-nb_sansint_look <- glmmTMB(Look ~ Species + Period + Treatment + (1|Trial), 
+nb_sansint_look <- glmmTMB(Look ~ Species * Period + Treatment + (1|Trial), 
                    family = nbinom2, 
                    data = gdata,
                    offset = log(Total+1))
-p_sansint_move <- glmmTMB(Move ~ Species + Period + Treatment + (1|Trial), 
+p_sansint_move <- glmmTMB(Move ~ Species * Period + Treatment + (1|Trial), 
                   family = poisson, 
                   data = gdata,
                   offset = log(Total+1))
 summary(p_sansint_forage) # 7.56e-07 ***
-summary(nb_sansint_look) # 0.0108 *
-summary(p_sansint_move) # n/a
+summary(nb_sansint_look) # 0.00740 ** 
+summary(p_sansint_move) # 0.2352    
 
 # ANOVA
 anova(p_forage, p_sansint_forage, test="LRT") # 6.743e-05 ***
-anova(nb_look, nb_sansint_look, test="LRT") # 0.4796
-anova(p_move, p_sansint_move, test="LRT") # 0.0194 *
+anova(nb_look, nb_sansint_look, test="LRT") # 0.0656  
+anova(p_move, p_sansint_move, test="LRT") # 0.02185 *
 
 forage_emm <- emmeans(p_forage, pairwise ~ Period | Treatment)
 summary(forage_emm) # <0.0001 playback-post (z = -4.202), 0.0001 playback-pre (z = -4.837)
 # they foraged less during the playback!!
 
-look_emm <- emmeans(nb_look, pairwise ~ Period | Treatment)
-summary(look_emm) # nope
+look_emm <- emmeans(nb_look, pairwise ~ Period | Treatment * Species)
+summary(look_emm) 
+# species brown
+#      Playback - Post 0.0157 p value, 2.766 z ratio
+# conclusion: Brown Capuchins looked more during the playback period than the post-playback period.
 
-move_emm <- emmeans(p_move, pairwise ~ Period | Treatment)
-summary(move_emm) # 0.0166 playback-pre (z = 2.746)
-# they moved more during the playback!
+move_emm <- emmeans(p_move, pairwise ~ Period | Treatment * Species)
+summary(move_emm) 
+# species white
+#      Playback - Pre 0.0038 p value, 3.206 z ratio
+# conclusion: White-fronted Capuchins moved more during the playback period than the pre-playback period.
 
+# Final interpretation
+# Forage: playback reduced foraging across both species.
+
+# Look: Brown showed increase looking during experimental playback compared to post
+#       whereas white showed no significant change.
+
+# Move: White showed increase movement during experimental playback compared to pre
+#       whereas brown showed no significant change.
 
 # ---------- PLOTS ---------- 
 
+gdata$Species <- factor(gdata$Species,
+                        levels = c("b","w"),
+                        labels = c("S. apella","C. albifrons"))
+gdata$Period <- factor(gdata$Period,
+                       levels = c("Pre", "Playback", "Post"))
+gdata$Treatment <- factor(gdata$Treatment,
+                          levels = c("Control", "Experimental"))
 
-ggplot(gdata, aes(x = Period, y = Forage, fill = Treatment)) + geom_boxplot() + 
-  labs(title = "Forage Distribution by Period and Treatment", x = "Period", y = "Forage") + theme_minimal() +
+forage_plot <- ggplot(gdata, aes(x = Period, y = Forage, fill = Treatment)) + 
+  geom_boxplot(width = 0.7, outlier.size=1.5) + 
+  scale_y_continuous(expand = expansion(mult = c(0.05, 0.2)))+
+  labs( title = "Forage",
+    x = "Period", 
+    y = "# of Forage Events") + theme_classic(base_family = "Times", base_size = 12) +
+  scale_fill_manual(values = c("Control" = "lightblue", "Experimental" = "orange"))
+forage_plot <- forage_plot + 
+  plot_annotation(title = "Scan Sampling Distributions: Forage",
+                  theme = theme(plot.title=element_text(family = "Times",size = 15)))
+
+print(forage_plot)
+ggsave(
+  "figures/scan_forage.pdf",
+  forage_plot,
+  width = 7,
+  height = 5,
+  units = "in",
+  dpi = 600
+)
+
+look_plot <- ggplot(gdata, aes(x = Period, y = Look, fill = Treatment)) + 
+  scale_y_continuous(expand = expansion(mult = c(0.05, 0.2)))+
+  geom_boxplot(width = 0.7, outlier.size=1.5, size= 0.4) + 
+  facet_wrap(~Species, nrow=1) +
+  labs(title = "Look", 
+       x = "Period", 
+       y = "# of Look Events") + theme_classic(base_family = "Times", base_size = 12) +
   scale_fill_manual(values = c("Control" = "lightblue", "Experimental" = "orange")) +
-  scale_x_discrete(limits = c("Pre", "Playback", "Post")) 
+  theme(strip.text = element_text(face = "italic"))
 
 
-ggplot(gdata, aes(x = Period, y = Look, fill = Treatment)) + geom_boxplot() +
-  labs(title = "Look Distribution by Period and Treatment", x = "Period", y = "Look") + theme_minimal() +
+move_plot <- ggplot(gdata, aes(x = Period, y = Move, fill = Treatment)) + 
+  scale_y_continuous(expand = expansion(mult = c(0.05, 0.2))) +
+  geom_boxplot(width = 0.7, outlier.size=1.5, size= 0.4) + 
+  facet_wrap(~Species, nrow=1) +
+  labs(title = "Move", 
+       x = "Period",
+       y = "# of Move Events") + theme_classic(base_family = "Times", base_size = 12) +
   scale_fill_manual(values = c("Control" = "lightblue", "Experimental" = "orange")) +
-  scale_x_discrete(limits = c("Pre", "Playback", "Post")) 
+  guides(fill = "none") +
+  theme(strip.text = element_text(face = "italic"))
+ 
 
-
-ggplot(gdata, aes(x = Period, y = Move, fill = Treatment)) + geom_boxplot() +
-  labs(title = "Move Distribution by Period and Treatment", x = "Period",y = "Move") +
-  theme_minimal() +
-  scale_fill_manual(values = c("Control" = "lightblue", "Experimental" = "orange")) +
-  scale_x_discrete(limits = c("Pre", "Playback", "Post")) 
-
-
-# Adding the plots together
-p1 <- ggplot(gdata, aes(x = Period, y = Forage, fill = Treatment)) + 
-  geom_boxplot() + 
-  labs(title = "Forage", x = "Period", y = "Forage") + 
-  theme_minimal() +
-  scale_fill_manual(values = c("Control" = "lightblue", "Experimental" = "orange"), guide = "none") +  # Remove legend
-  scale_x_discrete(limits = c("Pre", "Playback", "Post")) 
-
-p2 <- ggplot(gdata, aes(x = Period, y = Look, fill = Treatment)) + 
-  geom_boxplot() + 
-  labs(title = "Look", x = "Period", y = "Look") + 
-  theme_minimal() +
-  scale_fill_manual(values = c("Control" = "lightblue", "Experimental" = "orange"), guide = "none") +  # Remove legend
-  scale_x_discrete(limits = c("Pre", "Playback", "Post")) 
-
-p3 <- ggplot(gdata, aes(x = Period, y = Move, fill = Treatment)) + 
-  geom_boxplot() + 
-  labs(title = "Move", x = "Period", y = "Move") +
-  theme_minimal() +
-  scale_fill_manual(values = c("Control" = "lightblue", "Experimental" = "orange")) + # Keep legend
-  scale_x_discrete(limits = c("Pre", "Playback", "Post")) +
-  theme(legend.position = "right")  # Move legend to the right of "Move" plot
-
-combined_plot <- (p1 | p2 | p3) + 
-  plot_annotation(title = "Scan Sampling Distribution by Period and Treatment")
-
-print(combined_plot)
-
-#sink()
-
+combined_look_move <- look_plot / move_plot +
+  plot_annotation( title = "Scan Sampling Distributions: Species-specific Look and Move",
+                   theme = theme(plot.title=element_text(family = "Times",size = 15)))
+ggsave(
+  "figures/scan_look_move.pdf",
+  combined_look_move,
+  width = 7,
+  height = 8,
+  units = "in",
+  dpi = 600
+)
+print(combined_look_move )
