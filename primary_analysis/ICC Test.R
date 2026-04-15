@@ -1,3 +1,5 @@
+library("psych")
+
 # ICC TEST: Here is where we tested our Practice BORIS Data. Raw Practice BORIS Data is in the "BORIS Focal Data" Folder in BOX 
 ratings <- data.frame(
   rater1 = c(10.167, 24.637, 8.298, 7.385),

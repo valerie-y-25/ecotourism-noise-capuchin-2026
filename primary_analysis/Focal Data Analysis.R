@@ -1,4 +1,4 @@
-#sink("Focal Data Analysis and ICC Test output.txt")
+#sink("Focal Data Analysis.txt")
 library("glmmTMB")
 library("lme4")
 library("lmerTest")
